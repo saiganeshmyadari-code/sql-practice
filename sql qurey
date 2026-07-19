@@ -1,0 +1,62 @@
+creATE TABLE STUDENT (student_id int,name varchar(50),department varchar(30),age int,gender varchar(30),marks decimal(5,2),city varchar(50));
+insert into student values(101,"sai","csd",19,"male",80,"hyderabad");
+insert into student values(102,"bun","csd",16,"male",93,"hyderabad"),(103,"soumya","csm","female",18,"vemulawada"),(104,"kruthika""ece","female",19,"varangal"),
+(105,"dileep","csd",16,"male",34,"ghatkesar");
+create table employe(employe_id int, name varchar(50));
+create table dept(dept_id int, name varchar(50),location varchar(40));
+create table customer(customer_id int primary key,name varchar(50),email varchar(50) unique,city varchar(50));
+Complete Student SQL Practice Answers
+CREATE TABLE Student(Student_ID INT, Name VARCHAR(50), Department VARCHAR(30), Age
+INT, Gender CHAR(1), Marks DECIMAL(5,2), City VARCHAR(30));
+1. INSERT INTO Student VALUES (101,'Ravi','CSE',20,'M',85.50,'Hyderabad');
+2. INSERT INTO Student VALUES (102,'Anita','ECE',19,'F',78,'Warangal'),(103,'Rahul','EEE',21,'M'
+,82,'Karimnagar'),(104,'Sneha','MECH',20,'F',88,'Nizamabad'),(105,'Arjun','CIVIL',22,'M',67,'Khamm
+am'),(106,'Priya','AIML',19,'F',91,'Hyderabad');
+3. INSERT INTO Student VALUES (107,'Sai','Data Science',20,'M',92,'Rajanna Siricilla');
+4. INSERT INTO Student VALUES
+(108,'Kiran','CSE',20,'M',75,'Adilabad'),(109,'Pooja','CSE',21,'F',89,'Nalgonda');
+5. INSERT INTO Student VALUES (110,'Asha','IT',20,'F',95,'Hyderabad'),(111,'Vamsi','ECE',20,'M',
+93,'Warangal'),(112,'Deepa','AIML',19,'F',96,'Karimnagar');
+6. INSERT INTO Student(Student_ID,Name,Department,Age,Gender,Marks) VALUES
+(113,'Ramesh','ECE',20,'M',72);
+7. INSERT INTO Student VALUES (114,'S1','CSE',20,'M',81,'H'),(115,'S2','ECE',21,'F',76,'W'),(116,'
+S3','EEE',22,'M',68,'K'),(117,'S4','MECH',20,'M',73,'N'),(118,'S5','CIVIL',19,'F',84,'H'),(119,'S6','IT',2
+1,'M',59,'V'),(120,'S7','AIML',20,'F',90,'G'),(121,'S8','DS',20,'M',87,'A'),(122,'S9','CSE',22,'F',45,'H'),(
+123,'S10','ECE',19,'M',38,'V');
+SELECT * FROM Student;
+SELECT Student_ID, Name FROM Student;
+SELECT Name, Department FROM Student;
+SELECT * FROM Student WHERE Department='CSE';
+SELECT * FROM Student WHERE Marks>80;
+SELECT * FROM Student WHERE Age<20;
+SELECT * FROM Student WHERE City='Hyderabad';
+SELECT * FROM Student WHERE Marks BETWEEN 70 AND 90;
+UPDATE Student SET Department='AIML' WHERE Student_ID=101;
+UPDATE Student SET Marks=95 WHERE Name='Ravi';
+UPDATE Student SET City='Hyderabad' WHERE Department='CSE';
+UPDATE Student SET Marks=Marks+5 WHERE Student_ID=103;
+UPDATE Student SET Age=21;
+UPDATE Student SET Gender='F' WHERE Student_ID=105;
+UPDATE Student SET Department='EEE' WHERE Department='ECE';
+UPDATE Student SET Marks=40 WHERE Marks<40;
+DELETE FROM Student WHERE Student_ID=101;
+DELETE FROM Student WHERE Department='ECE';
+DELETE FROM Student WHERE Marks<35;
+DELETE FROM Student WHERE City='Vijayawada';
+DELETE FROM Student WHERE Gender='F';
+DELETE FROM Student;
+INSERT INTO Student VALUES (...5 records...); SELECT * FROM Student;
+INSERT INTO Student VALUES (...3 records...); UPDATE Student SET Marks=90 WHERE
+Student_ID=102;
+SELECT * FROM Student; UPDATE Student SET Department='IT' WHERE Student_ID=103;
+SELECT * FROM Student;
+DELETE FROM Student WHERE Student_ID=104; SELECT * FROM Student;
+INSERT INTO Student VALUES (130,'Temp','CSE',20,'M',80,'Hyderabad'); DELETE FROM
+Student WHERE Student_ID=130;
+UPDATE Student SET City='Hyderabad' WHERE Student_ID=102; SELECT * FROM Student
+WHERE Student_ID=102;
+INSERT INTO Student VALUES (...5 records...); SELECT * FROM Student WHERE Marks>85;
+DELETE FROM Student WHERE Age>22; SELECT * FROM Student;
+UPDATE Student SET Marks=Marks+10 WHERE Department='CSE';
+SELECT * FROM Student ORDER BY Student_ID ASC;
+SELECT * FROM Student ORDER BY Marks DESC;
